@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD231 - Grace Ayuso</title>
+        <meta name="description" content="Grace Adriana Ayuso Ferrín. Index page for the WDD 231 class of BYUI">
+        <meta name="author" content="Grace Ayuso">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+    </head>
+    <body>
+        <header>
+                <span class="header">
+                    <img src="images/profile.webp" alt="Profile picture of Grace Ayuso" width="250">
+                    Grace Ayuso
+                </span>
+            <button id="menu" aria-label="Menu button"></button>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" id="home" class="active" title="Home">Home</a></li>
+                <li><a href="#" id="chamber" title="Chamber">Chamber</a></li>
+                <li><a href="#" id="github" title="GitHub">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/grace-ayuso-15b1762bb/" id="linkedin" title="Linkedin">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <div class="first">
+                <section class="course-work">
+                    <h2>Course work</h2>
+                    <p>--</p>
+                    <p>--</p>
+                    <p>--</p>
+                </section>
+                <section class="ecuador">
+                    <h2>Ecuador</h2>
+                    <figure>
+                        <img src="images/ecuador.webp" alt="Volcano in Ecuador" width="300">
+                        <figcaption>Cotopaxi Volcano</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div class="second">
+                <section class="certificate">
+                    <h2>Web and Computer Programming Certificate</h2>
+                    <div class="cursos">
+                        <ul>
+                            <li><button id="all" title="All">All</button></li>
+                            <li><button id="cse" title="CSE">CSE</button></li>
+                            <li><button id="wdd" title="WDD">WDD</button></li>
+                        </ul>
+                    </div>
+                    <p id="credits"></p>
+                    <div class="container"></div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <span id="currentyear"> - Grace Adriana Ayuso - Ecuador</span>
+            </p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
