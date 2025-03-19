@@ -14,12 +14,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <meta property="og:title" content="Directory - Montecristi Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://media.children.org/cdn-8db70e8e5039d00/globalassets/03_stories/2023/06_june/ecuador-has-everything-fb.jpg">
     <meta property="og:url" content="https://ayusograce.github.io/wdd231/chamber/directory">
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            <img loading="lazy" src="images/chamber-icon.svg" alt="Montecristi chamber of commerce logo" width="150" height="150">
+            <div class="text-title">
+                <h1>Montecristi</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu" aria-label="Menu button"></button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#" id="home" title="Home">Home</a></li>
+                <li><a href="#" id="directory" title="Directory">Directory</a></li>
+                <li><a href="#" id="join" title="Join">Join</a></li>
+                <li><a href="#" id="discover" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <div class="info-chamber">
+            <p>Montecristi Chamber of Commerce</p>
+            <p>Rocafuerte street and 10 de agosto</p>
+            <p>Montecristi, Manabí</p>
+            <p>montecristi.chamber@gmail.com</p>
+            <p>(123)444-3456</p>
+        </div>
+        <nav class="icon">
+            <a href="https://www.facebook.com/">
+                <img loading="lazy" src="images/fb.svg" alt="Facebook" width="70">
+            </a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=ec">
+                <img loading="lazy" src="images/linkedin.svg" alt="LinkedIn" width="70">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img loading="lazy" src="images/youtube.svg" alt="YouTube" width="70">
+            </a>
+        </nav>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Grace Adriana Ayuso Ferrín</p>
+            <p>
+                <span id="currentyear"> Montecristi Chamber of Commerce</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 </html>
