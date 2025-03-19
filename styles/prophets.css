@@ -1,0 +1,32 @@
+section {
+
+    background-color: aliceblue;
+    padding-bottom: 1rem;
+    border: solid 1px gray;
+    margin-bottom: 1rem;
+    text-align: center;
+    display:grid; 
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+	grid-gap: 0.5rem;
+	place-items: center;
+	padding-bottom: 2rem;
+}
+
+main { 
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+h2{
+    padding-top: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: navy;
+}
