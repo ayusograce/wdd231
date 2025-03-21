@@ -15,6 +15,7 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <meta property="og:title" content="Directory - Montecristi Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://media.children.org/cdn-8db70e8e5039d00/globalassets/03_stories/2023/06_june/ecuador-has-everything-fb.jpg">
@@ -23,7 +24,7 @@
 <body>
     <header>
         <div class="title">
-            <img loading="lazy" src="images/chamber-icon.svg" alt="Montecristi chamber of commerce logo" width="150" height="150">
+            <img loading="lazy" src="images/chamber-icon.svg" alt="Montecristi chamber of commerce logo" width="80" height="80">
             <div class="text-title">
                 <h1>Montecristi</h1>
                 <p>Chamber of Commerce</p>
@@ -33,18 +34,26 @@
         <nav class="nav" id="nav">
             <ul>
                 <li><a href="#" id="home" title="Home">Home</a></li>
-                <li><a href="#" id="directory" title="Directory">Directory</a></li>
+                <li><a href="#" id="directory" class="active" title="Directory">Directory</a></li>
                 <li><a href="#" id="join" title="Join">Join</a></li>
                 <li><a href="#" id="discover" title="Discover">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-
+        <h2>Directory of members</h2>
+        <div class="format">
+            <ul>
+                <li><button id="grid" title="Grid"><img src="images/grid.svg" alt="Grid logo" width="25" height="25"></button></li>
+                <li><button id="list" title="List"><img src="images/list.svg" alt="List logo" width="25" height="25"></button></li>
+            </ul>
+        </div>
+        <div id="cards">
+        </div>
     </main>
     <footer>
         <div class="info-chamber">
-            <p>Montecristi Chamber of Commerce</p>
+            <p id="bold">Montecristi Chamber of Commerce</p>
             <p>Rocafuerte street and 10 de agosto</p>
             <p>Montecristi, Manabí</p>
             <p>montecristi.chamber@gmail.com</p>
@@ -52,13 +61,13 @@
         </div>
         <nav class="icon">
             <a href="https://www.facebook.com/">
-                <img loading="lazy" src="images/fb.svg" alt="Facebook" width="70">
+                <img loading="lazy" src="images/fb.svg" alt="Facebook" width="70" height="70">
             </a>
             <a href="https://www.linkedin.com/home?originalSubdomain=ec">
-                <img loading="lazy" src="images/linkedin.svg" alt="LinkedIn" width="70">
+                <img loading="lazy" src="images/linkedin.svg" alt="LinkedIn" width="70" height="70">
             </a>
             <a href="https://www.youtube.com/">
-                <img loading="lazy" src="images/youtube.svg" alt="YouTube" width="70">
+                <img loading="lazy" src="images/youtube.svg" alt="YouTube" width="70" height="70">
             </a>
         </nav>
         <div class="footer-info">

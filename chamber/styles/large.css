@@ -1,0 +1,89 @@
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+	
+	/* PRIMERA PARTE DE LA PAGINA */
+	h1 {
+		font-size: 2rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5rem;
+	}
+
+	.nav {
+		display: flex;
+		margin: 0;
+		border-top: 0;
+	}
+
+	.nav a{
+		display: block;
+	}
+
+    .nav ul{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+	/* FOOTER  OF THE PAGES */
+	footer{
+		display: flex;
+		/* gap: 50px; */
+		justify-content: space-evenly;
+	}
+
+	footer div{
+		padding-right: 1rem;
+	}
+
+	.icon{
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+	
+	/* DIRECTORY PAGE */
+	.format ul{
+		gap: 70px;
+		justify-content: center;
+	}
+
+	.grid{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+		justify-content: center;
+		padding-bottom: 2rem;
+	}
+
+	.grid section{
+		width: 400px;
+		border: solid 1px rgba(204, 204, 204, 0.39);
+	}
+
+	.list-row{
+		display: grid;
+		grid-template-columns: 330px 350px 150px auto;
+		align-items: center;
+		padding-bottom: 0;
+	}
+	
+	.list-row p{
+		padding-left: 10px;
+		font-size: medium;
+	}
+
+
+}

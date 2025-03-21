@@ -1,0 +1,58 @@
+{"members": [
+    {
+        "name": "Panificadora Antonio López farfan",
+        "address": "E30, Montecristi 130223",
+        "phoneNumber": "0984307143",
+        "websiteURL": "https://www.instagram.com/rosquitaslopezfarfan/?hl=es",
+        "image": "./images/member1.jpg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Irresistible Gourmet",
+        "address": "Calle Guillermo Balda, y esquina, Montecristi 130223",
+        "phoneNumber": "0991365767",
+        "websiteURL": "https://ayusograce.github.io/wdd131/project/home",
+        "image": "./images/member2.jpg",
+        "membership": "Silver"
+    },
+    {
+        "name": "El Negocio de Heidy",
+        "address": "Acceso al Paseo Lúdico, Rocafuerte, Montecristi 130219",
+        "phoneNumber": "0960953950",
+        "websiteURL": "https://www.instagram.com/elnegociodeheidy/",
+        "image": "./images/member3.jpg",
+        "membership": "Bronze"
+    },
+    {
+        "name": "Panama Hat Factory Montecuador",
+        "address": "Calle 9 de julio entre Olmedo y Manta, Montecristi 130219",
+        "phoneNumber": "0988938400",
+        "websiteURL": "https://montecuadorhats.com/",
+        "image": "./images/member4.svg",
+        "membership": "Gold"
+    },
+    {
+        "name": "Modesto Hats - Panama Hat Montecristi Ecuador",
+        "address": "Calle 9 de julio y Av, Olmedo, Montecristi 130219",
+        "phoneNumber": "0997263357",
+        "websiteURL": "https://modestohats.com/",
+        "image": "./images/member5.png",
+        "membership": "Silver"
+    },
+    {
+        "name": "Ferretería HIERRO&SAN",
+        "address": "C. Chimborazo &, Montecristi",
+        "phoneNumber": "0994016500",
+        "websiteURL": "https://www.aiyellow.com/ferreteria-montecristi/",
+        "image": "./images/member6.jpg",
+        "membership": "Bronze"
+    },
+    {
+        "name": "SUBLIMAX",
+        "address": "593, Montecristi",
+        "phoneNumber": "0987508487",
+        "websiteURL": "https://www.instagram.com/sublimax.official/?hl=es-la",
+        "image": "./images/member7.jpg",
+        "membership": "Gold"
+    }
+]}
