@@ -30,12 +30,6 @@ header{
     margin: 1rem;
 }
 
-.title h1 {
-    color: var(--accent1-color);
-	font-size: 1.5rem;
-    margin-bottom: 3px;
-}
-
 .title p{
     color: var(--accent1-color);
     padding-left: 0;
@@ -45,7 +39,13 @@ header{
 .text-title{
     display: block;
     text-align: start;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+
+#big-title{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 0;
 }
 
 
@@ -176,8 +176,10 @@ button{
 
 
 /* DIRECTORY PAGE */
-h2{
+h1{
     text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 
 .format li{
