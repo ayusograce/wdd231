@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Montecristi Chamber of Commerce</title>
+    <meta name="description" content="The home page for the Montecristi Chamber of Commerce, a non profit organization that unites small businesses in the city of Montecristi">
+    <meta name="author" content="Grace Ayuso">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <!-- <script src="scripts/members.js" defer></script> -->
+    <meta property="og:title" content="Home - Montecristi Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.children.org/cdn-8db70e8e5039d00/globalassets/03_stories/2023/06_june/ecuador-has-everything-fb.jpg">
+    <meta property="og:url" content="https://ayusograce.github.io/wdd231/chamber/index">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img loading="lazy" src="images/chamber-icon.svg" alt="Montecristi chamber of commerce logo" width="80" height="80">
+            <div class="text-title">
+                <p id="big-title">Montecristi</p>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu" aria-label="Menu button"></button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#" id="home" class="active" title="Home">Home</a></li>
+                <li><a href="https://ayusograce.github.io/wdd231/chamber/directory.html" id="directory" title="Directory">Directory</a></li>
+                <li><a href="#" id="join" title="Join">Join</a></li>
+                <li><a href="#" id="discover" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="position">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1700px)">
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                    <img loading="lazy" src="images/hero-vertical.webp" alt="Cake image" width="500" height="750">
+                </picture>
+            </div>
+            <div class="phrase banter">
+                <p>We are </p>
+                <button>Join now!</button>
+            </div>
+        </div>
+        <h1>Home</h1>
+        <section>
+            <h2>Events</h2>
+        </section>
+        <section>
+            <h2>Current Weather</h2>
+            <div></div>
+        </section>
+        <section>
+            <h2>Weather Forecast</h2>
+            <div></div>
+        </section>
+        <section class="business-cards">
+            <div></div>
+        </section>
+    </main>
+    <!-- AFTER THIS POINT MAINTAIN THE SAME -->
+    <footer>
+        <div class="info-chamber">
+            <p id="bold">Montecristi Chamber of Commerce</p>
+            <p>Rocafuerte street and 10 de agosto</p>
+            <p>Montecristi, Manabí</p>
+            <p>montecristi.chamber@gmail.com</p>
+            <p>(123)444-3456</p>
+        </div>
+        <nav class="icon">
+            <a href="https://www.facebook.com/">
+                <img loading="lazy" src="images/fb.svg" alt="Facebook" width="70" height="70">
+            </a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=ec">
+                <img loading="lazy" src="images/linkedin.svg" alt="LinkedIn" width="70" height="70">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img loading="lazy" src="images/youtube.svg" alt="YouTube" width="70" height="70">
+            </a>
+        </nav>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Grace Adriana Ayuso Ferrín</p>
+            <p>
+                <span id="currentyear"> Montecristi Chamber of Commerce</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
