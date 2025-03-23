@@ -86,4 +86,64 @@
 	}
 
 
+	/* INDEX OR HOME PAGE */
+	.phrase{
+		width: 40%;
+		margin-left: 7rem;
+		top: 25%;
+		background-color: transparent;
+		border: solid 1px gray;
+		padding-bottom: 2rem;
+	}
+
+	.phrase p{
+		font-size: 200%;
+	}
+
+	.home-content{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: space-evenly;
+		/* background-color: var(--accent3-color); */
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+		border-bottom: solid 15px var(--accent3-color);
+	}
+
+	.home-content section{
+		width: 450px;
+		margin-bottom: 2rem;
+		background-color: var(--accent1-color);
+		border: solid 1px var(--accent3-color);
+	}
+
+	#events{
+		width: 40%;
+	}
+
+	#css-weather{
+		display: grid;
+		grid-template-columns: 40% auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
+
+	#weather-icon{
+		margin-top: 0;
+	}
+
+	#current-weather{
+		text-align: left;
+	}
+
+	#weather-forecast{
+		text-align: center;
+		padding-top: 2rem;
+		font-size: large;
+	}
+
+
 }

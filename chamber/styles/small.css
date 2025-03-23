@@ -124,6 +124,10 @@ main {
 	margin: 0 auto;
 }
 
+.all{
+    max-width: 100%;
+}
+
 section {
 	text-align: center;
 	padding: 0.5rem;
@@ -234,3 +238,73 @@ h1{
     padding-bottom: 2rem;
 } 
 
+/* INDEX PAGE CONTENT */
+
+.position {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: var(--background-color) solid 5px;
+}
+
+.phrase {
+    position: absolute;
+    background-color: #706f6fd3;
+    width: 100%;
+    text-align: center;
+    top: 2rem;
+    font-size: x-large;
+}
+
+.phrase p{
+    font-family: var(--title-font);
+    color: var(--accent1-color);
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.phrase button{
+    width: 150px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.phrase button:hover{
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+.all section{
+    border-top: solid 1px var(--accent3-color);
+    background-color: hsla(30, 3%, 73%, 0.404);
+    margin-bottom: 1rem;
+}
+
+.all h2{
+    background-color: var(--background-color);
+    color: var(--accent1-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+#events{
+    padding-bottom: 6rem;
+}
+
+.no-color section{
+    background-color: var(--accent1-color);
+}
+
+#weather-icon{
+    background-color: rgb(127, 163, 194);
+    border-radius: 100%;
+    margin-top: 1rem;
+}

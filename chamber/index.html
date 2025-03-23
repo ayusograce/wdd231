@@ -15,7 +15,9 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <!-- <script src="scripts/members.js" defer></script> -->
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <meta property="og:title" content="Home - Montecristi Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://media.children.org/cdn-8db70e8e5039d00/globalassets/03_stories/2023/06_june/ecuador-has-everything-fb.jpg">
@@ -40,7 +42,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="all">
         <div class="position">
             <div class="hero">
                 <picture>
@@ -50,26 +52,32 @@
                     <img loading="lazy" src="images/hero-vertical.webp" alt="Cake image" width="500" height="750">
                 </picture>
             </div>
-            <div class="phrase banter">
-                <p>We are </p>
+            <div class="phrase">
+                <p>Are you a business owner in Montecristi?</p>
                 <button>Join now!</button>
             </div>
         </div>
         <h1>Home</h1>
-        <section>
-            <h2>Events</h2>
-        </section>
-        <section>
-            <h2>Current Weather</h2>
-            <div></div>
-        </section>
-        <section>
-            <h2>Weather Forecast</h2>
-            <div></div>
-        </section>
-        <section class="business-cards">
-            <div></div>
-        </section>
+        <div class="home-content">
+            <section id="events">
+                <h2>Events</h2>
+                <p>STAY TUNED FOR FUTURE EVENTS!!!</p>
+            </section>
+            <section>
+                <h2>Current Weather</h2>
+                <div id="css-weather">
+                    <img id="weather-icon" src="images/chamber-icon.svg" alt="weather icon">
+                    <div id="current-weather"></div>
+                </div>
+            </section>
+            <section>
+                <h2>Weather Forecast</h2>
+                <div id="weather-forecast"></div>
+            </section>
+        </div>
+        <div id="spotlight" class="grid no-color">
+        </div>
+        
     </main>
     <!-- AFTER THIS POINT MAINTAIN THE SAME -->
     <footer>
