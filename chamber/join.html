@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Montecristi Chamber of Commerce</title>
+    <meta name="description" content="The page for joining the Montecristi Chamber of Commerce, a non profit organization that unites small businesses in the city of Montecristi">
+    <meta name="author" content="Grace Ayuso">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/membership.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <meta property="og:title" content="Join page - Montecristi Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.children.org/cdn-8db70e8e5039d00/globalassets/03_stories/2023/06_june/ecuador-has-everything-fb.jpg">
+    <meta property="og:url" content="https://ayusograce.github.io/wdd231/chamber/join">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img loading="lazy" src="images/chamber-icon.svg" alt="Montecristi chamber of commerce logo" width="80" height="80">
+            <div class="text-title">
+                <p id="big-title">Montecristi</p>
+                <p>Chamber of Commerce</p>
+            </div>
+            <button id="menu" aria-label="Menu button"></button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="https://ayusograce.github.io/wdd231/chamber/index.html" id="home" title="Home">Home</a></li>
+                <li><a href="https://ayusograce.github.io/wdd231/chamber/directory.html" id="directory" title="Directory">Directory</a></li>
+                <li><a href="#" id="join" class="active" title="Join">Join</a></li>
+                <li><a href="#" id="discover" title="Discover">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+
+        <form method="GET" action="thankyou.html" class="designOne">
+            <h2>Membership Application Form</h2>
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organization Title <input type="text" name="organization-title" required autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Minimum 7 characters. Only letters, hyphens and spaces allowed."></label>
+            <label>Email <input type="email" name="email" required placeholder="yourname@mail.com"  title="Your Email" autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+            <label>Business/Organization's name <input type="text" name="organization" required autocomplete="organization" title="Your business/organization"></label>
+            <label>Business/Organization Description <textarea name="description" id="description" title="Description of the business/organization" rows="4" cols="35"></textarea></label>
+        
+            <h3>Membership Level</h3>
+            <label><input type="radio" name="membership" value="NP" checked> NP Membership (non profit)</label>
+            <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+            <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+            <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+  
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <button type="submit">Send Application</button>
+        </form>
+
+        <h2>Membership Levels</h2>
+        <div class="hidden">
+            <div id="membership-levels"></div>
+            <dialog id="levels-details"></dialog>
+        </div>
+    </main>
+    <!-- AFTER THIS POINT MAINTAIN THE SAME -->
+    <footer>
+        <div class="info-chamber">
+            <p id="bold">Montecristi Chamber of Commerce</p>
+            <p>Rocafuerte street and 10 de agosto</p>
+            <p>Montecristi, Manabí</p>
+            <p>montecristi.chamber@gmail.com</p>
+            <p>(123)444-3456</p>
+        </div>
+        <nav class="icon">
+            <a href="https://www.facebook.com/">
+                <img loading="lazy" src="images/fb.svg" alt="Facebook" width="70" height="70">
+            </a>
+            <a href="https://www.linkedin.com/home?originalSubdomain=ec">
+                <img loading="lazy" src="images/linkedin.svg" alt="LinkedIn" width="70" height="70">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img loading="lazy" src="images/youtube.svg" alt="YouTube" width="70" height="70">
+            </a>
+        </nav>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Grace Adriana Ayuso Ferrín</p>
+            <p>
+                <span id="currentyear"> Montecristi Chamber of Commerce</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
