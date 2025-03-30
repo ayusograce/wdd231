@@ -42,7 +42,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="join-grid">
         <h1>Join</h1>
 
         <form method="GET" action="thankyou.html" class="designOne">
@@ -55,21 +55,25 @@
             <label>Business/Organization's name <input type="text" name="organization" required autocomplete="organization" title="Your business/organization"></label>
             <label>Business/Organization Description <textarea name="description" id="description" title="Description of the business/organization" rows="4" cols="35"></textarea></label>
         
-            <h3>Membership Level</h3>
-            <label><input type="radio" name="membership" value="NP" checked> NP Membership (non profit)</label>
-            <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
-            <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
-            <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+            <div class="radio">
+                <h3>Membership Level</h3>
+                <label><input type="radio" name="membership" value="NP" checked> NP Membership (non profit)</label>
+                <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+            </div>
   
             <input type="hidden" name="timestamp" id="timestamp">
 
             <button type="submit">Send Application</button>
         </form>
 
-        <h2>Membership Levels</h2>
-        <div class="hidden">
-            <div id="membership-levels"></div>
-            <dialog id="levels-details"></dialog>
+        <div id="membership-title">
+            <h2 >Membership Levels</h2>
+            <div class="hidden">
+                <div id="membership-levels"></div>
+                <dialog id="levels-details"></dialog>
+            </div>
         </div>
     </main>
     <!-- AFTER THIS POINT MAINTAIN THE SAME -->
