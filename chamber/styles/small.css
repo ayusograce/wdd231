@@ -358,6 +358,12 @@ select {
     width:250px;
 }
 
+input[type=radio]{
+    transform: scale(1.3);
+    margin-right: 10px;
+    margin-bottom: 0.5rem;
+}
+
 input:required {border-left-color: #d70000;}
 input:focus {border-left-color: black; outline:none;}
 input:required:valid{border-left-color: green;}
