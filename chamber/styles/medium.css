@@ -165,6 +165,21 @@
 		grid-column: 1;
 	}
 
-	/* THANK YOU PAGE */
+	/* DISCOVER PAGE */
+	.places-photos section{
+		grid-template-areas: 
+		"photo name"
+		"photo description"
+		"photo location"
+		"photo button"
+		;
+	}
+
+	.places-photos section img{
+		align-self: center;
+		margin-right: 1rem;
+	}
+
+
 
 }

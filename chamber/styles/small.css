@@ -474,8 +474,8 @@ dialog button{
     grid-template-areas: 
     "name"
     "photo"
-    "location"
     "description"
+    "location"
     "button"
     ;
 }
@@ -494,6 +494,7 @@ dialog button{
 
 .places-photos section address{
     grid-area: location;
+    margin-bottom: 0.5rem;
 }
 
 .places-photos section button{

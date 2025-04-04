@@ -1,5 +1,23 @@
 /* large view navigation ************************************/
 @media (min-width: 64.063em) {
+    .places-photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 
+    .places-photos section{
+		grid-template-areas: 
+		"name"
+		"photo" 
+        "description"
+		"location"
+		"button"
+		;
+	}
+
+    .places-photos section address{
+        margin-top: 1rem;
+    }
 
 }
