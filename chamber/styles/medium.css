@@ -1,0 +1,170 @@
+/* medium view navigation ************************************/
+@media (min-width: 40.063em) {
+	
+	/* PRIMERA PARTE DE LA PAGINA */
+	h1 {
+		font-size: 2rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5rem;
+	}
+
+	.nav {
+		display: flex;
+		margin: 0;
+		border-top: 0;
+	}
+
+	.nav a{
+		display: block;
+	}
+
+    .nav ul{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+	/* FOOTER  OF THE PAGES */
+	footer{
+		display: flex;
+		/* gap: 50px; */
+		justify-content: space-evenly;
+	}
+
+	footer div{
+		padding-right: 1rem;
+	}
+
+	.icon{
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+	
+	/* DIRECTORY PAGE */
+	.format ul{
+		gap: 70px;
+		justify-content: center;
+	}
+
+	.grid{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 50px;
+		justify-content: center;
+		padding-bottom: 2rem;
+	}
+
+	.grid section{
+		width: 400px;
+		border: solid 1px rgba(204, 204, 204, 0.39);
+	}
+
+	.list-row{
+		display: grid;
+		grid-template-columns: 330px 350px 150px auto;
+		align-items: center;
+		padding-bottom: 0;
+	}
+	
+	.list-row p{
+		padding-left: 10px;
+		font-size: medium;
+	}
+
+
+	/* INDEX OR HOME PAGE */
+	.phrase{
+		width: 40%;
+		margin-left: 7rem;
+		top: 25%;
+		background-color: transparent;
+		border: solid 1px gray;
+		padding-bottom: 2rem;
+	}
+
+	.phrase p{
+		font-size: 200%;
+	}
+
+	.home-content{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: space-evenly;
+		/* background-color: var(--accent3-color); */
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+		border-bottom: solid 15px var(--accent3-color);
+	}
+
+	.home-content section{
+		width: 450px;
+		margin-bottom: 2rem;
+		background-color: var(--accent1-color);
+		border: solid 1px var(--accent3-color);
+	}
+
+	#events{
+		width: 40%;
+	}
+
+	#css-weather{
+		display: grid;
+		grid-template-columns: 40% auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
+
+	#weather-icon{
+		margin-top: 0;
+	}
+
+	#current-weather{
+		text-align: left;
+	}
+
+	#weather-forecast{
+		text-align: center;
+		padding-top: 2rem;
+		font-size: large;
+	}
+
+	/* JOIN PAGE CSS */
+	.join-grid{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.join-grid h1{
+		grid-column: 1/3;
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
+
+	form{
+		margin-top: 0;
+	}
+
+	.hidden{
+		grid-column: 1;
+	}
+
+	/* THANK YOU PAGE */
+
+}

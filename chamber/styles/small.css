@@ -58,7 +58,6 @@ header{
 	max-width: 100%;
 	margin: 1rem auto;
     border-top: 1px solid;
-    /* CAMBIOS */
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
@@ -68,12 +67,9 @@ header{
 .nav ul{
     list-style: none;
     padding-left: 0;
-    /* CAMBIOS */
     overflow: hidden;
 }
 
-
-/* CAMBIOS */
 .nav.open{
     grid-template-rows: 1fr;
 }
@@ -458,3 +454,50 @@ dialog button{
     justify-items: center;
 }
 
+/* DISCOVER PAGE MAIN CONTENT */
+
+.places-photos{
+    width: 90%;
+    justify-self: center;
+}
+
+.places-photos section{
+    border: 1px solid #ccc;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+    background-color: #ffe2bc36;
+    justify-items: center;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "location"
+    "description"
+    "button"
+    ;
+}
+
+.places-photos section h2{
+    grid-area: name;
+}
+
+.places-photos section img{
+    grid-area: photo;
+}
+
+.places-photos section p{
+    grid-area: description;
+}
+
+.places-photos section address{
+    grid-area: location;
+}
+
+.places-photos section button{
+    border-radius: 10%;
+    width: 150px;
+    grid-area: button;
+}

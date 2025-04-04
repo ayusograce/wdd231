@@ -1,0 +1,59 @@
+{"places" : [
+    {
+      "name": "Ciudad Alfaro",
+      "address": "Prolongación de la calle 10 de Agosto, Montecristi, Ecuador",
+      "description": "Ciudad Alfaro is a civic center and museum dedicated to Eloy Alfaro, a pivotal figure in Ecuador's liberal revolution. The complex includes historical exhibits and offers panoramic views of Montecristi.",
+      "photo_url": "ciudad-alfaro.webp",
+      "url": "https://ciudadalfaro.gob.ec/"
+    },
+    {
+      "name": "Basílica Menor de la Virgen de Monserrat",
+      "address": "Calle 9 de Julio y Calle 23 de Octubre, Montecristi, Ecuador",
+      "description": "This basilica, with its European design influenced by Baroque and Gothic styles, stands as an architectural gem. Constructed between 1959 and 1962, it houses the revered image of the Virgen de Monserrat.",
+      "photo_url": "iglesia.webp",
+      "url": "https://ec.viajandox.com/montecristi/basilica-menor-de-la-virgen-de-monserrat-A500"
+    },
+    {
+      "name": "Panama Hat Shops",
+      "address": "Various locations in Montecristi, particularly along the main streets of the town center.",
+      "description": "Montecristi is renowned for its high-quality, handwoven toquilla straw hats, commonly known as Panama hats. Visiting local shops allows you to observe artisans at work and purchase these iconic hats.",
+      "photo_url": "hat-shops.webp",
+      "url": "https://mytrip2ecuador.com/montecristi-hats/"
+    },
+    {
+      "name": "Cerro Montecristi",
+      "address": "Accessible from the town of Montecristi; trailheads are located near the outskirts of the town.",
+      "description": "Cerro Montecristi offers hiking trails leading to its summit, providing panoramic views of the town and surrounding landscapes. It's an excellent spot for nature enthusiasts and photographers.",
+      "photo_url": "cerro.webp",
+      "url": "https://www.goraymi.com/es-ec/manabi/montecristi/montanas-cerros/cerro-montecristi-ae14c93fd"
+    },
+    {
+      "name": "La Pila Pottery Workshops",
+      "address": "La Pila, a town located approximately 5 kilometers from Montecristi, along the road to Jipijapa.",
+      "description": "La Pila is famous for its traditional pottery and ceramics. Visiting the workshops provides insight into the crafting process and an opportunity to purchase unique handcrafted items.",
+      "photo_url": "la-pila.webp",
+      "url": "https://alfarerosdelapila.com/"
+    },
+    {
+      "name": "Playa de San José",
+      "address": "Located along the coastal area near Montecristi; accessible via local roads leading to the beach.",
+      "description": "Playa de San José offers a tranquil beach setting ideal for sunbathing, swimming, and enjoying the coastal environment.",
+      "photo_url": "playa.webp",
+      "url": "https://www.goraymi.com/es-ec/manabi/montecristi/playas/playa-san-jose-manabi-a3ncbpx47"
+    },
+    {
+      "name": "Montecristi Golf Resort & Villas",
+      "address": "Km.1.5 Vía Montecristi, Manta, Ecuador",
+      "description": "This resort features a golf course along with residential villas. It provides amenities for both golfers and visitors seeking relaxation in a serene environment.",
+      "photo_url": "golf-club.webp",
+      "url": "https://montecristigolf.com/"
+    },
+    {
+      "name": "Eloy Alfaro House Museum",
+      "address": "Located within Ciudad Alfaro, Prolongación de la calle 10 de Agosto, Montecristi, Ecuador.",
+      "description": "This museum is dedicated to preserving the legacy of Eloy Alfaro, featuring exhibits related to his life and contributions to Ecuador's history.",
+      "photo_url": "alfaro-museum.webp",
+      "url": "https://www.goraymi.com/es-ec/manabi/montecristi/museos/museo-municipal-casa-alfaro-a6gn91phx"
+    }
+  ]
+}
