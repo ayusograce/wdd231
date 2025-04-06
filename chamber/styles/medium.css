@@ -180,6 +180,10 @@
 		margin-right: 1rem;
 	}
 
+	.places-photos section img:hover {
+		box-shadow: 0 0 50px #8f8e8ea9;
+	}
+
 
 
 }

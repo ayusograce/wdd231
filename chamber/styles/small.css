@@ -502,3 +502,17 @@ dialog button{
     width: 150px;
     grid-area: button;
 }
+
+#visit-section{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--accent3-color);
+    color: var(--background-color);
+    width: 80%;
+    max-width: 50rem;
+    padding: 1rem;
+    font-size: larger;
+    justify-self: center;
+    font-weight: bold;
+    text-align: center;
+}

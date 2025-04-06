@@ -26,6 +26,7 @@ function displayItems(datos) {
         thephoto.alt = x.name;
         thephoto.width = 300;
         thephoto.height = 200;
+        thephoto.loading = "lazy";
         thecard.appendChild(thephoto);
 
         const thetitle = document.createElement('h2');
