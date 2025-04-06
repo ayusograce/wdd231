@@ -459,6 +459,7 @@ dialog button{
 .places-photos{
     width: 90%;
     justify-self: center;
+    min-height: 3700px;
 }
 
 .places-photos section{

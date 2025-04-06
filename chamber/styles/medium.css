@@ -184,6 +184,10 @@
 		box-shadow: 0 0 50px #8f8e8ea9;
 	}
 
+	.places-photos {
+		min-height: 3200px;
+	  }
+
 
 
 }
