@@ -1,0 +1,37 @@
+/* large view navigation ************************************/
+@media (min-width: 64.063em) {
+    /* HEADER */
+    #big-title{
+        font-size: xxx-large;
+    }
+    
+
+    /* HOME PAGE */
+    .phrase{
+        /* border: solid 1px var(--rose-color); */
+        top: 25%;
+        width: 45%;
+        margin-left: 4rem;
+        background-color: transparent;
+    }
+
+    .phrase p{
+		font-size: 180%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .phrase button{
+        font-size: large;
+        width: 200px;
+    }
+
+    .nav li{
+		min-width: 130px;
+	}
+
+    .nav ul{
+		width: 550px;
+    }
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Words Nook Book Club</title>
+    <meta name="description" content="The home page for The Words Nook Book Club, a virtual book club that is open to everyone who wants to join and share about books and words!">
+    <meta name="author" content="Grace Ayuso">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <meta property="og:title" content="Home - The Words Nook Book Club">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://ayusograce.github.io/wdd231/project/home">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img loading="lazy" src="images/bookclub-icon.svg" alt="The Words Nook logo" width="80" height="80">
+            <div class="text-title">
+                <p id="big-title">The Words Nook</p>
+                <p>Book Club</p>
+            </div>
+            <button id="menu" aria-label="Menu button"></button>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#" id="home" class="active" title="Home">Home</a></li>
+                <li><a href="#" id="reviews" title="Reviews">Reviews</a></li>
+                <li><a href="#" id="join" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="all">
+        <div class="position">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                    <img loading="lazy" src="images/hero-vertical.webp" alt="Cake image" width="500" height="750">
+                </picture>
+            </div>
+            <div class="phrase">
+                <p>A cozy corner to read, think, and share stories that move you</p>
+                <button onclick="window.location.href='https://ayusograce.github.io/wdd231/project/contact.html'">Join now!</button>
+            </div>
+        </div>
+        <h1>Home</h1>
+        <section>
+            <h2>A little about: <br>The Words Nook</h2>
+            <p>The Words Nook is a book club for everyone who loves to get lost between the pages, discover new written adventures and share stories that moves and inspires us.</p>
+            <p>Each month, we choose a new book to read together. We share our thoughts and build our comunity through the stories we explore. It doesn't matter whether you're a fast or slow reader -this is a place for every kind of reader.</p>
+            <p>Come in, make yourself comfortable, and join us in our next read. </p>
+            <p>The next big story is waiting for you!</p>
+            <img src="images/little-about.webp" alt="Piles of books" loading="lazy" width="450" height="300">
+        </section>
+        <section>
+            <h2>Book of the month</h2>
+        </section>
+        <section>
+            <h2>Read our reviews</h2>
+        </section>
+        <section>
+            <h2>Join our Newsletter</h2>
+            <form action=""></form>
+        </section>
+        <section class="quote"></section>
+    </main>
+    <!-- AFTER THIS POINT MAINTAIN THE SAME -->
+    <footer>
+        <nav class="icon">
+            <a href="https://www.instagram.com/adri.ayuso/">
+                <img loading="lazy" src="images/instagram.svg" alt="Instagram" width="70" height="70">
+            </a>
+            <a href="https://www.goodreads.com/gaaf">
+                <img loading="lazy" src="images/goodreads.svg" alt="Goodreads" width="70" height="70">
+            </a>
+            <a href="https://x.com/">
+                <img loading="lazy" src="images/twitter.svg" alt="Twitter" width="70" height="70">
+            </a>
+        </nav>
+        <div class="footer-info">
+            <p>Grace Adriana Ayuso Ferrín</p>
+            <p>
+                <span id="currentyear"> The Word Nook Book Club</span>
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

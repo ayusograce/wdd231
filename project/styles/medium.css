@@ -1,0 +1,172 @@
+/* medium view navigation ************************************/
+@media (min-width: 40.063em) {
+	
+	/* PRIMERA PARTE DE LA PAGINA */
+	h1 {
+		font-size: 2rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0.5rem;
+	}
+
+	.nav {
+		display: flex;
+		margin: 0;
+		border-top: 0;
+	}
+
+	.nav a{
+		display: block;
+	}
+
+    .nav ul{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+		width: 400px;
+    }
+
+	.nav a:hover, button:hover{
+		border-radius: 999px;
+	}
+
+	.active{
+		border-radius: 999px;
+	}
+
+	/* FOOTER  OF THE PAGES */
+	footer{
+		display: flex;
+		/* gap: 50px; */
+		justify-content: space-evenly;
+	}
+
+	footer div{
+		padding-right: 1rem;
+	}
+
+	.icon{
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+	}
+	
+
+	/* HOME PAGE */
+	.phrase{
+		width: 50%;
+		margin-left: 4rem;
+		top: 15%;
+		background-color: transparent;
+		padding-bottom: 1rem;
+		background-color: rgba(235, 233, 233, 0.329);
+	}
+
+	.phrase p{
+		font-size: 120%;
+		color: var(--brown-color);
+	}
+
+	.home-content{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		justify-content: space-evenly;
+		/* background-color: var(--accent3-color); */
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+		border-bottom: solid 15px var(--accent3-color);
+	}
+
+	.home-content section{
+		width: 450px;
+		margin-bottom: 2rem;
+		background-color: var(--accent1-color);
+		border: solid 1px var(--accent3-color);
+	}
+
+	#events{
+		width: 40%;
+	}
+
+	#css-weather{
+		display: grid;
+		grid-template-columns: 40% auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
+
+	#weather-icon{
+		margin-top: 0;
+	}
+
+	#current-weather{
+		text-align: left;
+	}
+
+	#weather-forecast{
+		text-align: center;
+		padding-top: 2rem;
+		font-size: large;
+	}
+
+	/* JOIN PAGE CSS */
+	.join-grid{
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.join-grid h1{
+		grid-column: 1/3;
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+	}
+
+	form{
+		margin-top: 0;
+	}
+
+	.hidden{
+		grid-column: 1;
+	}
+
+	/* DISCOVER PAGE */
+	.places-photos section{
+		grid-template-areas: 
+		"photo name"
+		"photo description"
+		"photo location"
+		"photo button"
+		;
+	}
+
+	.places-photos section img{
+		align-self: center;
+		margin-right: 1rem;
+	}
+
+	.places-photos section img:hover {
+		box-shadow: 0 0 50px #8f8e8ea9;
+	}
+
+	.places-photos {
+		min-height: 3200px;
+	  }
+
+
+
+}
