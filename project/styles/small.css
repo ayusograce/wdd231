@@ -42,6 +42,7 @@ header{
     border-radius: 30%;
     border: solid 5px var(--rose-color);
     margin: 1rem;
+    margin-right: 0.5rem;
 }
 
 .title p{
@@ -58,7 +59,7 @@ header{
 }
 
 #big-title{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: bolder;
     margin-bottom: 0;
 }
@@ -116,7 +117,7 @@ header{
 	color: var(--accent1-color);
  	position: absolute;
 	top: 1rem;
-	right: 1rem;
+	right: 0.1rem;
 }
 
 #menu::before {
@@ -139,17 +140,12 @@ header{
 
 /* MAIN PART OF THE PAGE */
 main { 
-	max-width: 1200px;
+	/* max-width: 1200px; */
 	margin: 0 auto;
 }
 
 .all{
     max-width: 100%;
-}
-
-section {
-	text-align: center;
-	padding: 0.5rem;
 }
 
 
@@ -189,13 +185,14 @@ footer p {
 }
 
 button{
-    background-color: var(--background-color);
-    width: 5rem;
+    background-color: var(--brown-color);
+    color: var(--papaya-color);
+    border-radius: 999px;
     border: none;
     padding: 1rem;
-    color: var(--accent1-color);
-    font-weight: bold;
     font-size: large;
+    font-weight: bolder;
+    margin-bottom: 1rem;
 }
 
 
@@ -232,75 +229,140 @@ button{
 
 .phrase button{
     width: 150px;
-    background-color: var(--brown-color);
-    color: var(--papaya-color);
-    font-weight: bolder;
-    margin-bottom: 1rem;
-    border-radius: 999px;
-}
-
-.phrase button:hover{
-    background-color: var(--papaya-color);
-    color: var(--brown-color);
 }
 
 .all{
     background-color: var(--papaya-color);
 }
 
+h1{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--brown-color);
+    color: var(--papaya-color);
+}
+
 .all section{
-    border-top: solid 1px var(--rose-color);
-    background-color: var(--white-color);
     margin-bottom: 1rem;
-    max-width: 1400px;
     justify-self: center;
+    padding: 1rem;
 }
 
 .all h2{
-    /* background-color: var(--papaya-color); */
     color: var(--brown-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0;
 }
 
-#events{
-    padding-bottom: 6rem;
+.quote{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: double 3px var(--rose-color);
+    width: 70%;
+    max-width: 800px;
+    font-style: italic;
 }
 
-.no-color section{
-    background-color: var(--accent1-color);
+.author{
+    font-style: normal;
+    text-align: end;
+}
+
+.about h2{
+    font-size: x-large;
+    border-bottom: 1px var(--rose-color) dashed;
+}
+
+.about {
+    background-color: var(--white-color);
+    border-radius: 35px;
+    margin: 1rem;
+    /* max-width: 1000px; */
+}
+
+.bold{
+    font-weight: bold;
+    text-align: center;
+}
+
+.month-book{
+    text-align: center;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "picture"
+    "book"
+    "summary"
+    "boton";
+}
+
+.month-book img{
+    height: 200px;
+    padding-top: 1rem;
+    grid-area: picture;
+    justify-self: center;
+}
+
+.month-book h2{
+    grid-area: title;
+}
+
+.month-book h3{
+    grid-area: book;
+}
+
+.month-book p{
+    grid-area: summary;
+}
+
+.month-book button{
+    grid-area: boton;
+    max-width: 250px;
+    justify-self: center;
 }
 
 
+.reviews{
+    text-align: center;
+    background-color: var(--brown-color);
+    margin-top: 2rem;
+}
 
-/* JOIN PAGE CSS */
-.join-grid h1{
-    border-bottom: solid 1px var(--accent3-color);
+.reviews h2{
+    color: var(--white-color);
+}
+
+.reviews img{
+    position: relative;
+    width: 100%;
+    max-width: 370px;
+}
+
+.reviews button{
+    position: absolute;
+    left: 25%;
+    margin-top: 5rem;
+    width: 50%;
+}
+
+.newsletter h2{
+    text-align: center;
 }
 
 form {
     margin: 1rem 1rem;
-    justify-items: center;}
+    justify-items: center;
+}
   
 form label {
     display: block;
-    font-size: .8rem;
-    color: var(--background-color);
+    font-size: 1rem;
+    color: var(--brown-color);
     padding-top: .2rem;
 }
 
-form h2{
-    text-align: center;
-}
-
-form h3 {
-    font-size: .9rem;
-    color: var(--background-color);
-    margin: 1.5rem 0 .2rem 0;
-    border-bottom: 1px solid #eee;
-}
-  
 input[type=text],
 input[type=tel],
 input[type=date],
@@ -309,7 +371,7 @@ select {
     display: block;
     margin: .1rem 0 1rem 0 ;
     padding: .3rem;
-    border: 1px solid #999;
+    border: 1px solid var(--rose-color);
     border-radius: 4px;
     border-left-width: 5px;
     border-left-color:#555;
@@ -318,66 +380,22 @@ select {
     width: 250px;
 }
 
-.radio{
-    width:250px;
-}
-
-input[type=radio]{
-    transform: scale(1.3);
-    margin-right: 10px;
-    margin-bottom: 0.5rem;
-}
-
 input:required {border-left-color: #d70000;}
 input:focus {border-left-color: black; outline:none;}
 input:required:valid{border-left-color: green;}
 
-button[type=submit] {
-    border: none;
-    text-align: center;
-    background-color: var(--background-color);
-    color: var(--accent1-color);
-    border-radius: 1rem;
-    margin: 2rem 0;
-    font-size: 1rem;
-    width: 180px;
-    
-}
-
-button[type=submit]:hover{
-    background-color: var(--primary-color);
-    color: var(--background-color);
-}
-
-#membership-title{
-    text-align: center;
-}
-
-.hidden button{
-    width: 150px;
-    border-radius: 10%;
-    font-size: 1rem;
-}
-
-.hidden section{
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    background-color: #cccccc83;
-    width: 100%;
-    max-width: 400px;
-    align-items: center;
-}
 
 dialog {
-    text-align: left;
+    text-align: center;
     padding-left: 2rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    border-radius: 0.25rem;
-    /* padding: 1rem; */
+    padding: 2rem;
+    border: 4px solid var(--rose-color);
+    border-radius: 15px;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
     width: 80%;
     max-width: 500px;
+    font-size: large;
 }
 
 ::backdrop{
@@ -392,32 +410,3 @@ dialog button{
     max-width: 40px;
 }
 
-
-
-/* ANIMATION WHEN SCROLLING */
-.hidden{
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 1s;
-    justify-items: center;
-}
-
-.show{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-
-/* THANK YOU PAGE STYLING */
-#results {
-    padding: 0 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 6px;
-    width: 70%;
-    margin-bottom: 2rem;
-    max-width: 500px;
-  }
-
-#thankyou-page{
-    justify-items: center;
-}

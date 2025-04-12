@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
+    <script src="scripts/quotes.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <meta property="og:title" content="Home - The Words Nook Book Club">
     <meta property="og:type" content="website">
@@ -54,25 +56,42 @@
             </div>
         </div>
         <h1>Home</h1>
-        <section>
-            <h2>A little about: <br>The Words Nook</h2>
-            <p>The Words Nook is a book club for everyone who loves to get lost between the pages, discover new written adventures and share stories that moves and inspires us.</p>
+        <section class="about">
+            <h2>The Words Nook</h2>
+            <p>This is a book club for everyone who loves to get lost between the pages, discover new written adventures and share stories that moves and inspires us.</p>
             <p>Each month, we choose a new book to read together. We share our thoughts and build our comunity through the stories we explore. It doesn't matter whether you're a fast or slow reader -this is a place for every kind of reader.</p>
             <p>Come in, make yourself comfortable, and join us in our next read. </p>
-            <p>The next big story is waiting for you!</p>
-            <img src="images/little-about.webp" alt="Piles of books" loading="lazy" width="450" height="300">
+            <p class="bold">The next big story is waiting for you!</p>
+            <!-- <img src="images/little-about.webp" alt="Piles of books" loading="lazy" width="450" height="300"> -->
         </section>
-        <section>
-            <h2>Book of the month</h2>
+        <div class="quote-box"><section class="quote"></section></div>
+        <section class="month-book about">
+            <h2>Book of the month: </h2>
+            <img src="images/month-book.webp" alt="Cover of Thy Soul Shall Bear Witness by Selma Lagerlöf" loading="lazy">
+            <h3>Thy Soul Shall Bear Witness by Selma Lagerlöf</h3>
+            <p>Selma Lagerlöf's 'Thy Soul Shall Bear Witness' is a captivating historical novel that transports readers to the Swedish countryside in the late 19th century. Through vivid descriptions and compelling storytelling, Lagerlöf explores themes of family, love, and faith against the backdrop of a rapidly changing society. Her lyrical prose and attention to detail create a rich tapestry of the characters' lives, allowing readers to immerse themselves in the setting and time period.</p>
+            <button onclick="window.location.href='https://www.amazon.com/Soul-Shall-Witness-Historical-Novel-ebook/dp/B094D516D2/ref=tmm_kin_swatch_0'">I want this book!</button>
         </section>
-        <section>
+        <div class="reviews">
             <h2>Read our reviews</h2>
-        </section>
-        <section>
+            <img src="images/reviews.webp" alt="Books open showing their pages" loading="lazy">
+            <button onclick="window.location.href='https://ayusograce.github.io/wdd231/project/reviews.html'">Visit now</button>
+        </div>
+        <section class="newsletter">
             <h2>Join our Newsletter</h2>
-            <form action=""></form>
+            <form>
+                <label>Name <input type="text" name="name" autocomplete="name" title="Your Name"></label>
+                <label>Email <input type="email" name="email" required placeholder="yourname@mail.com"  title="Your Email" autocomplete="email"></label>
+                <button id="subscribe" type="submit">Subscribe</button>
+            </form>
+            <dialog id="thank-you" class="modal">
+                <div class="modal-content">
+                  <p>Thank you for subscribing!</p>
+                  <button id="closeModal">X</button>
+                </dialog>
+            </div>
         </section>
-        <section class="quote"></section>
+        
     </main>
     <!-- AFTER THIS POINT MAINTAIN THE SAME -->
     <footer>
