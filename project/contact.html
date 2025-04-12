@@ -16,6 +16,8 @@
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/quotes.js" defer></script>
+    <script src="scripts/newsletter.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <meta property="og:title" content="Join - The Words Nook Book Club">
     <meta property="og:type" content="website">
@@ -42,15 +44,63 @@
     </header>
     <main class="all">
         <h1>Join us</h1>
+        
         <section class="about">
-            <h2>Steps to follow</h2>
-            <p>This is a book club for everyone who loves to get lost between the pages, discover new written adventures and share stories that moves and inspires us.</p>
-            <p>Each month, we choose a new book to read together. We share our thoughts and build our comunity through the stories we explore. It doesn't matter whether you're a fast or slow reader -this is a place for every kind of reader.</p>
-            <p>Come in, make yourself comfortable, and join us in our next read. </p>
-            <p class="bold">The next big story is waiting for you!</p>
-            <!-- <img src="images/little-about.webp" alt="Piles of books" loading="lazy" width="450" height="300"> -->
+            <h2>📚 How to Join <em>The Words Nook Book Club</em></h2>
+            <ol>
+                <li>
+                  <strong>Fill out the sign-up form</strong><br>
+                  Enter your name, email and phone number. That way, we can send you monthly newsletters and add you to our WhatsApp group.
+                </li>
+                <li>
+                  <strong>Check your email</strong><br>
+                  Within a few minutes, you'll receive a welcome email with:
+                  <ul>
+                    <li>A warm message</li>
+                    <li>The link to join our WhatsApp group, in case there's an error with the information provided</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Join the WhatsApp group</strong><br>
+                  Click the link in the email to enter our group. That's where we share updates, book discussions, and choose our next readings. Don't be afraid of sharing, we want to know to opinion!
+                </li>
+                <li>
+                  <strong>Follow us on social media</strong><br>
+                  To stay up to date with current readings, polls, and news, follow us on Instagram, Goodreads and X.
+                </li>
+                <li>
+                  <strong>Start reading with us!</strong><br>
+                  Once you’re in, you’ll get the book of the month and our reading calendar. It doesn’t matter if you’re a fast or slow reader—this is a space for all book lovers 🤍
+                </li>
+              </ol>
+        </section>
+        <section class="newsletter">
+            <h2>Sign up!</h2>
+            <form method="GET" action="thankyou.html">
+                <label>Name <input type="text" name="name" required autocomplete="name" title="Your Name"></label>
+                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                <label>Email <input type="email" name="email" required placeholder="yourname@mail.com"  title="Your Email" autocomplete="email"></label>
+                <button id="subscribe" type="submit">Join the club</button>
+            </form>
         </section>
         <div class="quote-box"><div class="quote"></div></div>
+        <div class="last-part">
+            <section class="newsletter">
+                <h2>Leave us a message</h2>
+                <form class="form">
+                    <label>Email <input type="email" name="email" placeholder="yourname@mail.com"  title="Your Email" autocomplete="email"></label>
+                    <label>Message <textarea name="message" id="message" title="Leave us your message" rows="4" cols="35" required></textarea></label>
+                    <button id="subscribe" type="submit">Send</button>
+                </form>
+                <dialog id="thank-you" class="modal">
+                    <div class="modal-content">
+                    <p>Thank you for your message!</p>
+                    <button id="closeModal">X</button>
+                    </div>
+                </dialog>
+            </section>
+            <div id="visit-section"></div>
+        </div>
     </main>
     <!-- AFTER THIS POINT MAINTAIN THE SAME -->
     <footer>

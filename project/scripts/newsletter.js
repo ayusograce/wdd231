@@ -2,7 +2,7 @@
 
 
 let boton = document.querySelector("#subscribe");
-let form = document.querySelector("form");
+let form = document.querySelector(".form");
 let close = document.querySelector("#closeModal");
 let modal = document.querySelector("#thank-you");
 
