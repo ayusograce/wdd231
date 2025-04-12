@@ -262,11 +262,17 @@ h1{
     width: 70%;
     max-width: 800px;
     font-style: italic;
+    justify-self: center;
+}
+
+.quote p{
+    padding-left: 1rem;
 }
 
 .author{
     font-style: normal;
     text-align: end;
+    padding-right: 1rem;
 }
 
 .about h2{
