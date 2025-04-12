@@ -17,6 +17,7 @@
 
 body {
     font-family: var(--text-font);
+    background-color: var(--papaya-color);
 }
 
 h1, h2{
@@ -306,6 +307,7 @@ h1{
 
 .month-book img{
     height: 200px;
+    width: auto;
     padding-top: 1rem;
     grid-area: picture;
     justify-self: center;
@@ -327,6 +329,8 @@ h1{
     grid-area: boton;
     max-width: 250px;
     justify-self: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -415,4 +419,47 @@ dialog button{
     padding: 0.25rem 1rem;
     max-width: 40px;
 }
+
+/* BOOKS PAGE STYLING */
+#year{
+    margin-bottom: 2rem;
+}
+#booksyear div{
+    border-bottom: 1px var(--rose-color) dashed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: 
+    "imagen imagen"
+    "titulo titulo"
+    "descripcion descripcion"
+    "goodreads comprar"
+    ;
+}
+
+#booksyear img{
+    grid-area: imagen;
+}
+
+#booksyear h3{
+    grid-area: titulo;
+}
+
+#booksyear p{
+    grid-area: descripcion;
+}
+
+#booksyear button#goodreads{
+    grid-area: goodreads;
+    /* justify-self: end; */
+}
+
+#booksyear button#comprar{
+    grid-area: comprar;
+    /* justify-self: start; */
+}
+
+
+
 

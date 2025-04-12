@@ -131,4 +131,21 @@
 		padding-top: 2rem;
 	}
 
+	/* BOOKS AND REAVIEWS PAGE STYLING */
+	#booksyear div{
+		grid-template-areas: 
+		"imagen titulo titulo"
+		"imagen descripcion descripcion"
+		"imagen goodreads comprar"
+		;
+	}
+
+	#booksyear button#goodreads{
+		justify-self: end;
+	}
+	
+	#booksyear button#comprar{
+		justify-self: start;
+	}
+
 }

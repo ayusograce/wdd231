@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Words Nook Book Club</title>
-    <meta name="description" content="The home page for The Words Nook Book Club, a virtual book club that is open to everyone who wants to join and share about books and words!">
+    <title>Reviews - The Words Nook Book Club</title>
+    <meta name="description" content="The page with reviews for The Words Nook Book Club, a virtual book club that is open to everyone who wants to join and share about books and words!">
     <meta name="author" content="Grace Ayuso">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -15,13 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/newsletter.js" defer></script>
     <script src="scripts/quotes.js" defer></script>
+    <script src="scripts/yearbooks.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <meta property="og:title" content="Home - The Words Nook Book Club">
+    <meta property="og:title" content="Reviews - The Words Nook Book Club">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-    <meta property="og:url" content="https://ayusograce.github.io/wdd231/project/home">
+    <meta property="og:url" content="https://ayusograce.github.io/wdd231/project/reviews">
 </head>
 <body>
     <header>
@@ -35,63 +35,26 @@
         </div>
         <nav class="nav" id="nav">
             <ul>
-                <li><a href="#" id="home" class="active" title="Home">Home</a></li>
-                <li><a href="https://ayusograce.github.io/wdd231/project/books" id="books" title="Books">Books</a></li>
+                <li><a href="https://ayusograce.github.io/wdd231/project/home" id="home"  title="Home">Home</a></li>
+                <li><a href="#" id="books" class="active" title="Books">Books</a></li>
                 <li><a href="#" id="join" title="Join">Join</a></li>
             </ul>
         </nav>
     </header>
     <main class="all">
-        <div class="position">
-            <div class="hero">
-                <picture>
-                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-                    <img loading="lazy" src="images/hero-vertical.webp" alt="Cake image" width="500" height="750">
-                </picture>
-            </div>
-            <div class="phrase">
-                <p>A cozy corner to read, think, and share stories that move you</p>
-                <button onclick="window.location.href='https://ayusograce.github.io/wdd231/project/contact.html'">Join now!</button>
-            </div>
-        </div>
-        <h1>Home</h1>
-        <section class="about">
-            <h2>The Words Nook</h2>
-            <p>This is a book club for everyone who loves to get lost between the pages, discover new written adventures and share stories that moves and inspires us.</p>
-            <p>Each month, we choose a new book to read together. We share our thoughts and build our comunity through the stories we explore. It doesn't matter whether you're a fast or slow reader -this is a place for every kind of reader.</p>
-            <p>Come in, make yourself comfortable, and join us in our next read. </p>
-            <p class="bold">The next big story is waiting for you!</p>
-            <!-- <img src="images/little-about.webp" alt="Piles of books" loading="lazy" width="450" height="300"> -->
-        </section>
-        <div class="quote-box"><div class="quote"></div></div>
+        <h1>Books and reviews</h1>
         <section class="month-book about">
             <h2>Book of the month: </h2>
-            <img src="images/month-book.webp" alt="Cover of Thy Soul Shall Bear Witness by Selma Lagerlöf" loading="lazy">
+            <img src="images/month-book.webp" alt="Cover of Thy Soul Shall Bear Witness by Selma Lagerlöf" loading="lazy" width="250" height="400">
             <h3>Thy Soul Shall Bear Witness by Selma Lagerlöf</h3>
             <p>Selma Lagerlöf's 'Thy Soul Shall Bear Witness' is a captivating historical novel that transports readers to the Swedish countryside in the late 19th century. Through vivid descriptions and compelling storytelling, Lagerlöf explores themes of family, love, and faith against the backdrop of a rapidly changing society. Her lyrical prose and attention to detail create a rich tapestry of the characters' lives, allowing readers to immerse themselves in the setting and time period.</p>
             <button onclick="window.location.href='https://www.amazon.com/Soul-Shall-Witness-Historical-Novel-ebook/dp/B094D516D2/ref=tmm_kin_swatch_0'">I want this book!</button>
         </section>
-        <div class="reviews">
-            <h2>Read our reviews</h2>
-            <img src="images/reviews.webp" alt="Books open showing their pages" loading="lazy">
-            <button onclick="window.location.href='https://ayusograce.github.io/wdd231/project/books.html'">Visit now</button>
-        </div>
-        <section class="newsletter">
-            <h2>Join our Newsletter</h2>
-            <form>
-                <label>Name <input type="text" name="name" autocomplete="name" title="Your Name"></label>
-                <label>Email <input type="email" name="email" required placeholder="yourname@mail.com"  title="Your Email" autocomplete="email"></label>
-                <button id="subscribe" type="submit">Subscribe</button>
-            </form>
-            <dialog id="thank-you" class="modal">
-                <div class="modal-content">
-                  <p>Thank you for subscribing!</p>
-                  <button id="closeModal">X</button>
-                </div>
-            </dialog>
+        <div class="quote-box"><div class="quote"></div></div>
+        <section id="year" class="month-book about">
+            <h2>Books of the year: </h2>
+            <div id="booksyear"></div>
         </section>
-        
     </main>
     <!-- AFTER THIS POINT MAINTAIN THE SAME -->
     <footer>
