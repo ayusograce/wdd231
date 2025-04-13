@@ -1,6 +1,6 @@
 :root {
     --brown-color: #5B1F0B;
-    --green-color: #406441;
+    --green-color: #304930;
     --rose-color: #af7a6d;
     --white-color: white;
     --papaya-color: #ffecd1;
@@ -341,16 +341,14 @@ h1{
 }
 
 .reviews img{
-    position: relative;
     width: 100%;
     max-width: 370px;
 }
 
 .reviews button{
-    position: absolute;
-    left: 25%;
-    margin-top: 5rem;
-    width: 50%;
+    margin-top: 1rem;
+    width: 40%;
+    border: solid 1px var(--rose-color);
 }
 
 .newsletter h2{

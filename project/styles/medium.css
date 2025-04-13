@@ -113,6 +113,7 @@
 		"image title" 
 		"image button";
 		text-align: left;
+		margin-bottom: 2rem;
 	}
 
 	.reviews img{
@@ -122,7 +123,6 @@
 	}
 
 	.reviews button{
-		position: static;
 		grid-area: button;
 		justify-self: start;
 		padding: 1rem;
