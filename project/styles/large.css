@@ -89,4 +89,13 @@
         padding-left: 4rem;
     }
 
+    /* CONTACT PAGE */
+    .contorno{
+        margin-top: 2rem;
+    }
+
+    #visit-section{
+        font-size: x-large;
+    }
+
 }

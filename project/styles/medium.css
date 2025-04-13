@@ -78,6 +78,10 @@
 		color: var(--brown-color);
 	}
 
+	.about{
+		width: 80%;
+	}
+
 	.month-book{
 		grid-template-areas: 
 		"title title"
@@ -131,6 +135,18 @@
 		padding-top: 2rem;
 	}
 
+	.quote{
+		width: 60%;
+		font-size: large;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	form{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
 	/* BOOKS AND REAVIEWS PAGE STYLING */
 	#booksyear div{
 		grid-template-areas: 
@@ -146,6 +162,25 @@
 	
 	#booksyear button#comprar{
 		justify-self: start;
+	}
+
+	/* CONTACT/JOIN PAGE */
+	.about ol{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	.about li{
+		padding-bottom: 1rem;
+	}
+
+	.contorno {
+		border: dashed 2px var(--rose-color);
+		/* padding-left: 2rem; */
+	}
+
+	#visit-section{
+		justify-self: center;
 	}
 
 }
