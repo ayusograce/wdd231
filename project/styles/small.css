@@ -148,7 +148,7 @@ footer {
 }
 
 footer p {
-    color: var(--accent1-color);
+    color: var(--white-color);
     padding-top: 5px;
     margin: 0;
     justify-self: center;
@@ -418,7 +418,7 @@ dialog button{
 #year{
     margin-bottom: 2rem;
 }
-#booksyear div{
+.booksyear div{
     border-bottom: 1px var(--rose-color) dashed;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -432,24 +432,24 @@ dialog button{
     ;
 }
 
-#booksyear img{
+.booksyear img{
     grid-area: imagen;
 }
 
-#booksyear h3{
+.booksyear h3{
     grid-area: titulo;
 }
 
-#booksyear p{
+.booksyear p{
     grid-area: descripcion;
 }
 
-#booksyear button#goodreads{
+.booksyear button#goodreads{
     grid-area: goodreads;
     /* justify-self: end; */
 }
 
-#booksyear button#comprar{
+.booksyear button#comprar{
     grid-area: comprar;
     /* justify-self: start; */
 }

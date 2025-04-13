@@ -1,7 +1,7 @@
 // ALMACENING THE LAST VISIT AND COMPARING IT TO THE DATE OF THE ACTUAL VISIT TO KNOW
 // HOW MANY DAYS HAS BEEN SINCE THE LAST TIME THE USER VISITED THE PAGE
 
-function lastVisitMessage(){
+export function lastVisitMessage(){
   const lastVisit = localStorage.getItem("lastVisit");
   const today = new Date();
   const msToDays = 86400000;
@@ -29,4 +29,3 @@ function lastVisitMessage(){
   localStorage.setItem("lastVisit", today.toISOString());
 }
 
-lastVisitMessage();

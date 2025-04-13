@@ -148,7 +148,7 @@
 	}
 
 	/* BOOKS AND REAVIEWS PAGE STYLING */
-	#booksyear div{
+	.booksyear div{
 		grid-template-areas: 
 		"imagen titulo titulo"
 		"imagen descripcion descripcion"
@@ -156,11 +156,11 @@
 		;
 	}
 
-	#booksyear button#goodreads{
+	.booksyear button#goodreads{
 		justify-self: end;
 	}
 	
-	#booksyear button#comprar{
+	.booksyear button#comprar{
 		justify-self: start;
 	}
 
